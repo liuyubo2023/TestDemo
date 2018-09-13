@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		33F1DA15C94B6427C51B338A /* libPods-TestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF67D4877493764F86F5C230 /* libPods-TestDemo.a */; };
+		96124992210827A100FF52D8 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 96124991210827A000FF52D8 /* Person.m */; };
+		96124995210827BE00FF52D8 /* KeyValueDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96124994210827BE00FF52D8 /* KeyValueDemoViewController.m */; };
+		9651545E214A8B7E0045CB00 /* TestFatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9651545D214A8B7E0045CB00 /* TestFatherViewController.m */; };
+		96515461214A8B980045CB00 /* TestChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96515460214A8B980045CB00 /* TestChildViewController.m */; };
+		96515464214A8BAD0045CB00 /* TestFatherViewController+print.m in Sources */ = {isa = PBXBuildFile; fileRef = 96515463214A8BAD0045CB00 /* TestFatherViewController+print.m */; };
+		96560F74213A490500716516 /* TableViewOffsetViewController+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 96560F73213A490500716516 /* TableViewOffsetViewController+Property.m */; };
 		9667C4F420BA8600008FA0B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9667C4F320BA8600008FA0B5 /* AppDelegate.m */; };
 		9667C4F720BA8600008FA0B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9667C4F620BA8600008FA0B5 /* ViewController.m */; };
 		9667C4FC20BA8600008FA0B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9667C4FB20BA8600008FA0B5 /* Assets.xcassets */; };
@@ -19,6 +25,18 @@
 
 /* Begin PBXFileReference section */
 		74CD7161D0F2F53E401B5737 /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
+		96124990210827A000FF52D8 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		96124991210827A000FF52D8 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		96124993210827BE00FF52D8 /* KeyValueDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyValueDemoViewController.h; sourceTree = "<group>"; };
+		96124994210827BE00FF52D8 /* KeyValueDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyValueDemoViewController.m; sourceTree = "<group>"; };
+		9651545C214A8B7E0045CB00 /* TestFatherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFatherViewController.h; sourceTree = "<group>"; };
+		9651545D214A8B7E0045CB00 /* TestFatherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFatherViewController.m; sourceTree = "<group>"; };
+		9651545F214A8B980045CB00 /* TestChildViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestChildViewController.h; sourceTree = "<group>"; };
+		96515460214A8B980045CB00 /* TestChildViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestChildViewController.m; sourceTree = "<group>"; };
+		96515462214A8BAD0045CB00 /* TestFatherViewController+print.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFatherViewController+print.h"; sourceTree = "<group>"; };
+		96515463214A8BAD0045CB00 /* TestFatherViewController+print.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TestFatherViewController+print.m"; sourceTree = "<group>"; };
+		96560F72213A490500716516 /* TableViewOffsetViewController+Property.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableViewOffsetViewController+Property.h"; sourceTree = "<group>"; };
+		96560F73213A490500716516 /* TableViewOffsetViewController+Property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TableViewOffsetViewController+Property.m"; sourceTree = "<group>"; };
 		9667C4EF20BA8600008FA0B5 /* TestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9667C4F220BA8600008FA0B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9667C4F320BA8600008FA0B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,6 +83,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9612498F2108265000FF52D8 /* KeyValueDemo */ = {
+			isa = PBXGroup;
+			children = (
+				96124990210827A000FF52D8 /* Person.h */,
+				96124991210827A000FF52D8 /* Person.m */,
+				96124993210827BE00FF52D8 /* KeyValueDemoViewController.h */,
+				96124994210827BE00FF52D8 /* KeyValueDemoViewController.m */,
+			);
+			path = KeyValueDemo;
+			sourceTree = "<group>";
+		};
+		9651545B214A8B620045CB00 /* TestCategory */ = {
+			isa = PBXGroup;
+			children = (
+				9651545C214A8B7E0045CB00 /* TestFatherViewController.h */,
+				9651545D214A8B7E0045CB00 /* TestFatherViewController.m */,
+				9651545F214A8B980045CB00 /* TestChildViewController.h */,
+				96515460214A8B980045CB00 /* TestChildViewController.m */,
+				96515462214A8BAD0045CB00 /* TestFatherViewController+print.h */,
+				96515463214A8BAD0045CB00 /* TestFatherViewController+print.m */,
+			);
+			path = TestCategory;
+			sourceTree = "<group>";
+		};
 		9667C4E620BA8600008FA0B5 = {
 			isa = PBXGroup;
 			children = (
@@ -86,12 +128,16 @@
 		9667C4F120BA8600008FA0B5 /* TestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9651545B214A8B620045CB00 /* TestCategory */,
+				9612498F2108265000FF52D8 /* KeyValueDemo */,
 				9667C4F220BA8600008FA0B5 /* AppDelegate.h */,
 				9667C4F320BA8600008FA0B5 /* AppDelegate.m */,
 				9667C4F520BA8600008FA0B5 /* ViewController.h */,
 				9667C4F620BA8600008FA0B5 /* ViewController.m */,
 				9667C51320BA890C008FA0B5 /* TableViewOffsetViewController.h */,
 				9667C51420BA890C008FA0B5 /* TableViewOffsetViewController.m */,
+				96560F72213A490500716516 /* TableViewOffsetViewController+Property.h */,
+				96560F73213A490500716516 /* TableViewOffsetViewController+Property.m */,
 				9667C51620BBB118008FA0B5 /* WkWebViewViewController.h */,
 				9667C51720BBB118008FA0B5 /* WkWebViewViewController.m */,
 				9667C4FB20BA8600008FA0B5 /* Assets.xcassets */,
@@ -226,11 +272,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9651545E214A8B7E0045CB00 /* TestFatherViewController.m in Sources */,
+				96124992210827A100FF52D8 /* Person.m in Sources */,
 				9667C51820BBB118008FA0B5 /* WkWebViewViewController.m in Sources */,
+				96124995210827BE00FF52D8 /* KeyValueDemoViewController.m in Sources */,
 				9667C4F720BA8600008FA0B5 /* ViewController.m in Sources */,
+				96560F74213A490500716516 /* TableViewOffsetViewController+Property.m in Sources */,
 				9667C50220BA8600008FA0B5 /* main.m in Sources */,
+				96515464214A8BAD0045CB00 /* TestFatherViewController+print.m in Sources */,
 				9667C4F420BA8600008FA0B5 /* AppDelegate.m in Sources */,
 				9667C51520BA890C008FA0B5 /* TableViewOffsetViewController.m in Sources */,
+				96515461214A8B980045CB00 /* TestChildViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWK9FAR3J2;
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Liuyubo.TestDemo;
@@ -372,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWK9FAR3J2;
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Liuyubo.TestDemo;

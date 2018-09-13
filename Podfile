@@ -8,5 +8,8 @@ target 'TestDemo' do
   # use_frameworks!
 
 pod 'MLeaksFinder'
+pod 'YYModel'
+pod 'MJExtension'
+pod 'MBProgressHUD'
 
 end
