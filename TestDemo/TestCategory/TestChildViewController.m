@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self reloadData];
+    [super reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
