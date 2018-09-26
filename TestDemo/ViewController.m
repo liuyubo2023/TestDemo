@@ -11,6 +11,7 @@
 #import "WkWebViewViewController.h"
 #import "KeyValueDemoViewController.h"
 #import "TestChildViewController.h"
+#import "TestRunloopViewController.h"
 
 
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>
@@ -111,7 +112,7 @@ static void lxdRunLoopObserverCallback(CFRunLoopObserverRef observer, CFRunLoopA
 };
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 14;
+    return [self titles].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -120,7 +121,7 @@ static void lxdRunLoopObserverCallback(CFRunLoopObserverRef observer, CFRunLoopA
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"第%ld行",indexPath.row + 1];
+    cell.textLabel.text = [self titles][indexPath.row];
     return cell;
 }
 
@@ -146,9 +147,18 @@ static void lxdRunLoopObserverCallback(CFRunLoopObserverRef observer, CFRunLoopA
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
+        case 4: {
+            TestRunloopViewController *vc = [[TestRunloopViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
         default:
             break;
     }
+}
+
+- (NSArray *)titles {
+    return @[@"tableview测试便宜",@"webview",@"keyValue",@"方法先后顺序",@"runloop"];
 }
 
 @end

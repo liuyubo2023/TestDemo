@@ -18,8 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIView *view = [[UIView alloc] init];
     [super reloadData];
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
