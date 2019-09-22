@@ -22,6 +22,7 @@
 - (void)reloadData {
     self.name = [self print];
     NSLog(@"name = %@",self.name);
+    NSLog(@"dev 1");
 }
 
 - (NSString *)print {
