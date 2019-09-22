@@ -12,6 +12,4 @@
 
 - (void)reloadData;
 
-- (void)father;
-
 @end

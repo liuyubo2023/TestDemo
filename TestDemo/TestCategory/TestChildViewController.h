@@ -10,6 +10,6 @@
 
 @interface TestChildViewController : TestFatherViewController
 
-- (void)child;
+@property (nonatomic, strong) NSString *childs;
 
 @end
