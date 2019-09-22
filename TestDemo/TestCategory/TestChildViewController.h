@@ -10,4 +10,6 @@
 
 @interface TestChildViewController : TestFatherViewController
 
+- (void)child;
+
 @end
