@@ -22,10 +22,6 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
 - (void)reloadData {
     self.name = [self print];
     NSLog(@"name = %@",self.name);
