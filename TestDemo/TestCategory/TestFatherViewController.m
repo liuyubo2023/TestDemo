@@ -10,9 +10,7 @@
 #import "TestFatherViewController+print.h"
 
 @interface TestFatherViewController ()
-
 @property (nonatomic, strong) NSString *name;
-
 @end
 
 @implementation TestFatherViewController
