@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "LYBUrlProtocol.h"
 
 @interface AppDelegate ()
 
@@ -24,6 +25,8 @@
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+    
+//    [NSURLProtocol registerClass:[LYBUrlProtocol class]];
     
     return YES;
 }

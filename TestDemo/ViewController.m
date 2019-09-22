@@ -12,6 +12,7 @@
 #import "KeyValueDemoViewController.h"
 #import "TestChildViewController.h"
 #import "TestRunloopViewController.h"
+#import "NetWorkViewController.h"
 
 
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>
@@ -152,13 +153,18 @@ static void lxdRunLoopObserverCallback(CFRunLoopObserverRef observer, CFRunLoopA
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
+        case 5: {
+            NetWorkViewController *vc = [[NetWorkViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
         default:
             break;
     }
 }
 
 - (NSArray *)titles {
-    return @[@"tableview测试便宜",@"webview",@"keyValue",@"方法先后顺序",@"runloop"];
+    return @[@"tableview测试便宜",@"webview",@"keyValue",@"方法先后顺序",@"runloop",@"网络测试"];
 }
 
 @end

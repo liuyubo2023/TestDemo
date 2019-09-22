@@ -18,21 +18,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor blackColor];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 164, self.view.bounds.size.width, self.view.bounds.size.height - 264)];
     tableView.delegate = self;
     tableView.dataSource = self;
     //放在上面是起作用的
-    tableView.contentInset = UIEdgeInsetsMake(20, 0, 20, 0);
-    tableView.contentOffset = CGPointMake(300, 100);
+    tableView.contentInset = UIEdgeInsetsMake(100, 0, 20, 0);
+    tableView.contentOffset = CGPointMake(200, -100);
     //放在下面就不起作用了
 //    tableView.contentInset = UIEdgeInsetsMake(20, 0, 20, 0);
     [self.view addSubview:tableView];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        self.array = @[@"hiasdf",@"hai",@"hai",@"hdfi",@"h324i",@"h234i",@"hig",@"hi",@"hi",@"hi",@"hi",@"hig",@"hi",@"hi",@"hi",@"hi"];
-        [tableView reloadSections:[[NSIndexSet alloc] initWithIndex:0] withRowAnimation:UITableViewRowAnimationNone];
-    });
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        self.array = @[@"hiasdf",@"hai",@"hai",@"hdfi",@"h324i",@"h234i",@"hig",@"hi",@"hi",@"hi",@"hi",@"hig",@"hi",@"hi",@"hi",@"hi"];
+//        [tableView reloadSections:[[NSIndexSet alloc] initWithIndex:0] withRowAnimation:UITableViewRowAnimationNone];
+//    });
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

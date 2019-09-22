@@ -6,7 +6,7 @@ project 'TestDemo.xcodeproj'
 target 'TestDemo' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
-
+pod 'AFNetworking'
 pod 'MLeaksFinder'
 pod 'YYModel'
 pod 'MJExtension'
