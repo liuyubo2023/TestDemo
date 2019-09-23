@@ -20,6 +20,7 @@
     
     UIView *view = [[UIView alloc] init];
     [super reloadData];
+    NSLog(@"add feature");
 }
 
 - (void)didReceiveMemoryWarning {
